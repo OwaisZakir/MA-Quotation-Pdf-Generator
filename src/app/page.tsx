@@ -150,8 +150,8 @@ export default function Home() {
             </tr>
           </thead>
           <tbody>
-            {rows.map((row, i) => (
-              <tr key={i}>
+            {rows.map((row, index) => (
+              <tr key={index}>
                 <td className="border p-1">{row.item}</td>
                 <td className="border p-1 text-center">{row.quantity}</td>
                 <td className="border p-1 text-right">Rs {row.price}</td>
