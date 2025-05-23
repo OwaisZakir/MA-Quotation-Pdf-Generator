@@ -100,27 +100,6 @@
   }
 }
 
-@keyframes spin-slow {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 .animate-fade-in {
   animation: fade-in 0.5s ease-out forwards;
 }
@@ -148,10 +127,6 @@
   animation: shine 3s infinite;
 }
 
-.animate-spin-slow {
-  animation: spin-slow 8s linear infinite;
-}
-
 /* Print styles */
 @media print {
   body * {
@@ -173,9 +148,4 @@
   button {
     display: none !important;
   }
-}
-
-.radial-gradient-circle {
-  background-size: var(--circle-size) var(--circle-size);
-  background-position: center center;
 }
